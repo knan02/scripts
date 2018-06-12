@@ -1,7 +1,7 @@
-import time, sys, shlex
+import time, sys, shleix, random
 
 def exec_job():
-  time.sleep(20)
+  time.sleep(random.randint(20))
   print "success"
 
 if __name__ == "__main__":
