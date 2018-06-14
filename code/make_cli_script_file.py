@@ -1,4 +1,4 @@
-def make_cli_command_func(args_json):
+def make_cli_command_constructor(args_json):
   cmd = "python scripts/mr_default.py"
   print cmd
   if args_json["resource_profile"]:
