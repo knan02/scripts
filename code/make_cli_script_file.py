@@ -11,6 +11,8 @@ def make_cli_command_constructor(args_json):
     cmd += " --filename " + args_json["filename"]
   if args_json["tag"]:
     cmd += " --tag " + args_json["tag"]
+  if args_json["project"]:
+    cmd += " --project " + args_json["project"]
   return cmd
 
   #return "python scripts/mr_default.py -r emr --proc=default_proc --label RTB-default_proc-20180425 --tag department=datascience"
